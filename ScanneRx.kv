@@ -1,0 +1,74 @@
+MDScreen:
+    md_bg_color: 0.96, 0.88, 0.79, 1
+
+    MDBoxLayout:
+        md_bg_color: 0.53, 0.81, 0.98, 1
+        pos_hint: {"center_x": .5, "top": 1}
+        orientation: "vertical"
+        padding: ['0dp', '24dp', '0dp', '0dp']
+        adaptive_height: True
+
+        MDSmartTile:
+            size_hint: None, None
+            size: '70dp', '85dp'
+            pos_hint: {"center_x": .5, "center_y": .5}  # Center the MDSmartTile
+            overlap: False
+
+            MDSmartTileImage:
+                source: "Logo.png"
+                #radius: [dp(12), dp(12), 0, 0]
+        
+        MDLabel:
+            text: "ScanneRx"
+            adaptive_size: True
+            pos_hint: {"center_x": .5, "center_y": .5}
+            theme_text_color: "Custom"
+            text_color: "white"
+            font_style: "Display"
+            role: "small"
+            padding: ['24dp', '12dp', '24dp', '24dp']
+
+        MDBoxLayout:
+            orientation: "vertical"
+            md_bg_color: 0.96, 0.88, 0.79, 1
+            padding: ['24dp', '24dp', '24dp', '24dp']
+            adaptive_height: True
+
+            MDFabButton:
+                icon: "camera"
+                style: "large"
+                padding:
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                theme_icon_color: "Custom"
+                icon_color: 0.53, 0.81, 0.98, 1
+                #on_release: app.take_picture()
+
+            MDLabel:
+                text: "Open Camera"
+                adaptive_size: True
+                pos_hint: {"center_x": .5, "center_y": .5}
+                theme_text_color: "Custom"
+                text_color: "black"
+                padding: ['24dp', '24dp', '24dp', '24dp']
+
+        MDBoxLayout:
+            orientation: "vertical"
+            md_bg_color: 0.96, 0.88, 0.79, 1
+            padding: ['24dp', '24dp', '24dp', '24dp']
+            adaptive_height: True
+
+            MDFabButton:
+                icon: "image"
+                style: "large"
+                padding:
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                theme_icon_color: "Custom"
+                icon_color: 0.53, 0.81, 0.98, 1
+
+            MDLabel:
+                text: "Select Image"
+                adaptive_size: True
+                pos_hint: {"center_x": .5, "center_y": .5}
+                theme_text_color: "Custom"
+                text_color: "black"
+                padding: ['24dp', '24dp', '24dp', '24dp']

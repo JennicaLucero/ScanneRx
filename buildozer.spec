@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = ScanneRx
 
 # (str) Package name
-package.name = myapp
+package.name = scannerx
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pillow
+requirements = python3==3.9.12,kivy==2.0.0,kivymd==0.104.2,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,10 +64,10 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3.9.12
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.0.0
 
 #
 # Android specific
@@ -442,7 +442,7 @@ warn_on_root = 1
 #    and extend the excluded directories to remove the HD content.
 #
 #[app@demo]
-#title = My Application (demo)
+#title = ScanneRx (demo)
 #
 #[app:source.exclude_patterns@demo]
 #images/hd/*

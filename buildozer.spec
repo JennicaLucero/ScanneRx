@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = ScanneRx
+title = My Application
 
 # (str) Package name
-package.name = scannerx
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -442,7 +442,7 @@ warn_on_root = 1
 #    and extend the excluded directories to remove the HD content.
 #
 #[app@demo]
-#title = ScanneRx (demo)
+#title = My Application (demo)
 #
 #[app:source.exclude_patterns@demo]
 #images/hd/*
